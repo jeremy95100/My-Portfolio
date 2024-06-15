@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Portfolio Website HTML CSS and Javascript | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
+    
+          
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="cover cover-left"></div>
+        <div class="cover cover-right turn"></div>
+
+        <!-- profile page -->
+        <div class="book">
+            <div class="book-page page-left">
+                <div class="profile-page">
+                    <img src="IMG_0571.jpg" alt="">
+                    <h1>Jeremy AZER</h1>
+                    <h3>Data engineer</h3>
+
+                    <div class="social-media">
+                        <a href="#" id="linkedin-link"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+
+                    <p>Hi, I'm Jeremy AZER, generalist engineer with a strong background in datascience. Passionate about natural language processing technologies 
+                    and solving complex problems in machine learning. </p>
+
+                    <div class="btn-box">
+                        <a href="/home/jeje95100/Downloads/CV-AZER-JEREMY-a.pdf" download><i class='btn'>Download CV</i></a>
+                        <a href="#"> <i class='btn contact-me'>Contact me</i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- page 1 & 2 -->
+            <div class="book-page page-right turn" id="turn-1">
+                <!-- page 1 (work experience) -->
+                <div class="page-front">
+                    <h1 class="title">Work Experience</h1>
+
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2024</span>
+                            <h3> Data scientist - Freelance - SNCF</h3>
+                            <p> Implementing LLM model to the SNCF bot for Olympic games (multilingual, reformulation and context comprehension) </p>
+                        </div>
+
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2023</span>
+                            <h3> Language study holiday - UK</h3>
+                            <p> During a language immersion program aimed at mastering English, I engaged in volunteer work and pursued an upskilling program in data engineering</p>
+                        </div>
+
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2021 - 2023</span>
+                            <h3>Data scientist - Apprenticeship - KLESIA</h3>
+                            <p> During my apprenticeship at Klesia, an insurance company, I worked as a data scientist on two major projects: customer sentiment analysis and customer segmentation. I also engaged in ancillary missions focused on combating money laundering.</p>
+                        </div>
+                    </div>
+
+                    
+                    <span class="number-page bottom-center">1</span>
+                    <!-- next button -->
+                    <span class="nextprev-btn" data-page="turn-1">
+                        <i class="bx bx-chevron-right"></i>
+                    </span>
+                    
+                </div>
+
+
+                <!-- page 2 (education) -->
+                <div class="page-back">
+                    <h1 class="title">Education</h1>
+                    
+                    <div class="workeduc-box">
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2018 - 202</span>
+                            <h3> Master degree - Engineering school ESILV (Léonard de Vinci) - Paris</h3>
+                            <p> Recently graduate in engineer school as Generalist engineer specialized in Data and Artificial Intelligence. </p>
+                        </div>
+
+                        <div class="workeduc-content">
+                            <span class="year"><i class='bx bxs-calendar'></i>2016 - 2018</span>
+                            <h3> High school Francois Joseph Talma - Brunoy</h3>
+                            <p> I obtained a Scientific Baccalaureate, solidifying my foundation in the sciences and laying the groundwork for my academic and professional journey.
+                            </p>
+                        </div>
+
+                    </div>
+                    <span class="number-page bottom-center">2</span>
+
+                    <!-- next button -->
+                    <span class="nextprev-btn back" data-page="turn-1">
+                        <i class="bx bx-chevron-left"></i>
+                    </span>
+
+                </div>
+            </div>
+            <!-- page 3 & 4 -->
+            
+                        <!-- page 3 (my services) -->
+            <div class="book-page page-right turn" id="turn-2">
+
+                <div class="page-front">
+                     <h1 class="title">My Skills</h1> 
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <h3>Langages de programmation</h3>
+                            <div class="content">
+                                <span><i class='bx bxl-python'></i>Python</span>
+                                <span><i class="devicon-azuresqldatabase-plain"></i>SQL</span>
+                                <span><i class="devicon-sass-original"></i>SAS</span>
+                                <span><i class="devicon-csharp-plain"></i>C#</span>
+                                
+                            </div>
+                        </div>
+
+                        <div class="skills-content">
+                            <h3>Bibliothèques et Framework</h3>
+                            <div class="content">
+                                <span><i class="devicon-numpy-plain"></i>NumPy</span>
+                                <span><i class="devicon-pandas-plain-wordmark"></i>Pandas</span>
+                                <span><i class="devicon-scikitlearn-plain"></i>Scikit</span>
+                                <span><i class="devicon-matplotlib-plain"></i>Matplotlib</span>
+                                <span><i class="devicon-pytorch-original"></i>Pytorch</span>
+                             </div>
+                        </div>
+
+                        <div class="skills-content">
+                            <h3>Système d'exploitation et cloud</h3>
+                            <div class="content">
+                                <span><i class="devicon-ubuntu-plain"></i>Ubuntu</span>
+                                <span><i class="devicon-azure-plain"></i>Azure</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <span class="number-page bottom-center">3</span>
+
+                        <span class="nextprev-btn" data-page="turn-2">
+                            <i class="bx bx-chevron-right"></i>
+                        </span>
+
+
+
+
+                </div>
+                <div class="page-back">
+                    <h1 class="title">Euro 2024 winner prediction</h1>
+
+                    <div class="portfolio-box">
+                        <div class="img-box">
+                            <img src="portfolio.jpg" alt="">
+                        </div>
+                        
+
+                        <div class="info-box">
+                            <div class="info-title">
+                                <h3></h3>
+                                
+                            </div>
+                            <p>Python :</p>
+                            <p>Webscraping, Data analysis with seaborn, matplotlib and pandas, Poisson probabilities, euclidian</p>
+                        </div>
+
+                        <div class="btn-box">
+                            <a href="https://github.com/jeremy95100/Euro-2024-winner-prediction" class="btn" target="_blank">Source Code</a>
+                            <!-- <a href="#" class="btn">More project</a> -->
+                        </div>
+                    </div>
+                    <span class="number-page bottom-center">4</span>
+
+                        <span class="nextprev-btn back" data-page="turn-2">
+                            <i class="bx bx-chevron-left"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="book-page page-right turn" id="turn-3">
+                    <div class="page-front">
+                        <h1 class="title">Contact Me !</h1>
+
+                        <div class="contact-box">
+                            <form action="https://formspree.io/f/xdoqqwdk" method="POST">
+                                <input type="text" class="field" name="name" placeholder="Full Name" required>
+                                <input type="email" class="field" name="email"placeholder="Email Address" required>
+                                <textarea name="msg" id="" cols="30" rows="10" class="field" placeholder="Your Message" required></textarea>
+                                <input type="submit" class="btn" value="Send Message">
+                            </form>
+                        </div>
+
+
+                        <span class="number-page bottom-center">5</span>
+
+                        <span class="nextprev-btn" data-page="turn-3">
+                            <i class="bx bx-chevron-right"></i>
+                        </span>
+
+                        
+                        <a href="#" class="back-profile">
+                            <p>Profile</p>
+                            <i class='bx bxs-user'></i>
+                        </a>
+
+                    </div>
+
+                    <div class="page-back">
+                        <h1 class="title last-title">Merci pour votre visite !</h1>
+
+                       
+
+                        <span class="number-page bottom-center">6</span>
+
+                        <span class="nextprev-btn back" data-page="turn-3">
+                            <i class="bx bx-chevron-left"></i>
+                        </span>
+
+                    </div>
+                </div>
+                 
+            </div>
+
+        </div>
+
+        
+
+    
+
+    
+            
+
+
+            <!-- page 5 & 6 -->
+                <!-- page 5 (latest project or my portfolio) -->
+                <!-- page 6 (contact me) -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
