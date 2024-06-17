@@ -29,6 +29,7 @@ body {
     min-height: 100vh;
     background: var(--bg-color);
     color: var(--text-color);
+    overflow: hidden;
 }
 
 .wrapper {
@@ -36,7 +37,19 @@ body {
   width: 66rem;
   height: 45rem;
   padding: 2rem;
-  
+  perspective: 250rem;
+  animation: show-animate 2s forwards;
+}
+
+@keyframes show-animate {
+  0%,30% {
+    opacity: 0;
+    transform: rotate(-20deg);
+  }
+  100% {
+     opacity: 1;
+    transform: rotate(0deg);
+  }
   
 }
 
@@ -55,6 +68,11 @@ body {
 
 .cover.cover-left {
     z-index: -1;
+}
+
+.cover.cover-right {
+  z-index: 100;
+  transition: transform 1s cubic-bezier(0.645, 0.045, 0.355, 1)
 }
 
 .cover.cover-right.turn {
@@ -76,6 +94,10 @@ body {
   box-shadow: 0 0 .6rem rgba(0, 0, 0, .1);
   display: flex;
   padding: 2rem;
+}
+
+.book-page.page-left {
+  box-shadow: -.6rem .6rem .6rem rgba(0, 0, 0, .1);
 }
 
 .profile-page {
@@ -412,7 +434,7 @@ body {
 .back-profile {
   position: absolute;
   bottom: 1.2rem;
-  left:2rem;
+  right:2rem;
   width: 2rem;
   height:2rem;
   background: transparent;
@@ -460,4 +482,31 @@ body {
   height: 100%;           /* S'assurer que le conteneur prend toute la hauteur disponible */
   text-align: center;     /* Centrer le texte */
   margin: 0;              /* Supprimer les marges */
+}
+
+
+
+.project-ideas {
+  max-width: 600px; /* Largeur maximale de la liste */
+  padding: 20px;
+  background-color: #f0f0f0; /* Couleur de fond pour la liste */
+  border-radius: 8px; /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+.project-ideas li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+
+
+.project-ideas li:before {
+  content: "\2022"; /* Utilisation du point en tant que bullet */
+  color: #1e90ff; /* Couleur du bullet */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  margin-right: 0.5em; /* Espace à droite du bullet */
 }
